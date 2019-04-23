@@ -12,13 +12,13 @@ import ...;
 @Configuration
 @EnableSwagger
 public class SwaggerConfig{
-
+  //swagger本身配置
   @Bean
   public Docket docket() {
     Docket docket =new Docket...
     return docket;
   }
-
+  //swagger-plus新增的配置
   @Bean
   public Source source() {
     return new Source() {
