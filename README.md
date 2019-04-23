@@ -4,12 +4,15 @@ swagger-plus 是对swagger进行增强的工具包，其设计目标是使其更
 ## 使用方式
 其它注册与swagger本身并无差异。
 
+```Java
 import com.cjp.swagger.dynamic.annotation.EnableSwagger;
 import com.cjp.swagger.dynamic.source.Source;
 import ...;
+
 @Configuration
 @EnableSwagger
 public class SwaggerConfig{
+
   @Bean
   public Docket docket() {
     Docket docket =new Docket...
@@ -19,7 +22,6 @@ public class SwaggerConfig{
   @Bean
   public Source source() {
     return new Source() {
-
       public boolean isOpen() {
         //以下以apollo为例，使用者可使用其它数据源
         return ConfigService.getAppConfig().getBooleanProperty("swagger.switch", true);
