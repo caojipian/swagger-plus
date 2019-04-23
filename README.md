@@ -1,5 +1,7 @@
 ## Introduction
 swagger-plus 是对swagger进行增强的工具包，其设计目标是使其更贴近与实际工作中，初次开源，也欢迎喜欢开源的同学提上自己宝贵的意见。
+主要功能:
+  可动态开关swagger
 
 ## 使用方式
 其它注册与swagger本身并无差异。
